@@ -1,0 +1,14 @@
+{
+    "categorias": [
+      {
+        "titulo": "Star Wars",
+        "categoria": "Nerds",
+        "videos": [
+          {
+            "titulo": "Star Wars Episode I - The Phantom Menace",
+            "url": "https://www.youtube.com/watch?v=bD7bpG-zDJQ"
+          } 
+        ]
+      }
+    ]
+  }

@@ -5,10 +5,9 @@ const ButtonGram = styled.button`
     background-color: var(--color-black-dark);
     color: var(--color-gray-light);
     border: 1px solid var(--color-gray-light);
-    border-radius: 4px;
     font-size: 18rem;
     cursor: pointer;
-    transition: transform 500ms ease-in-out, color 500ms linear;
+    transition: transform 500ms ease-in-out, color 300ms linear;
 
     &:hover {
         transform: scale(1.02);

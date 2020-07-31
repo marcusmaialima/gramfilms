@@ -14,6 +14,11 @@ const FooterGram = styled.footer`
     & > ${LogoGramFilms} {
         margin-bottom: 20rem;
     }
+
+    @media(max-width: 800px) {
+        margin-bottom: 57rem;
+        font-size: 14rem;
+    }
 `
 
 export default FooterGram
