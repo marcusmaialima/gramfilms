@@ -16,6 +16,10 @@ function getYouTubeId(youtubeURL: string) {
   )
 }
 
+function goToUrl(url: string) {
+  window.location.href = url
+}
+
 interface IBannerMain {
   videoTitle: string
   videoDescription: string
@@ -40,7 +44,7 @@ export default function BannerMain({
 
         <Item>
           <VideoIframe youtubeID={youTubeID} title={videoTitle} />
-          <WatchButton>Assistir</WatchButton>
+          <WatchButton onClick={() => goToUrl(url)}>Assistir</WatchButton>
         </Item>
       </ContentAreaContainer>
     </BannerMainContainer>

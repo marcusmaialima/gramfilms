@@ -12,21 +12,6 @@ const ButtonGram = styled.button`
   &:hover {
     transform: scale(1.02);
   }
-
-  @media (max-width: 799px) {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: var(--color-gray-light);
-    color: var(--color-black-dark);
-    font-weight: bold;
-    border: none;
-
-    &:hover {
-      transform: none;
-    }
-  }
 `
 
 export default ButtonGram

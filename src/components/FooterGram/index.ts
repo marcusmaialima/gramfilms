@@ -16,7 +16,6 @@ const FooterGram = styled.footer`
   }
 
   @media (max-width: 800px) {
-    margin-bottom: 57rem;
     font-size: 14rem;
   }
 `

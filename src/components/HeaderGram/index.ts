@@ -11,7 +11,6 @@ const HeaderGram = styled.header`
   align-items: center;
 
   @media (max-width: 800px) {
-    justify-content: center;
     padding: 15px 16px;
 
     & > ${Logo} {
