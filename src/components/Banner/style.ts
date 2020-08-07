@@ -1,61 +1,61 @@
 import styled from 'styled-components'
 
 export const ContentAreaContainer = styled.section`
-    margin-left: 5%;
-    margin-right: 5%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 10;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
 
-    @media(max-width: 800px) {
-        padding-top: 100px;
-        flex-direction: column;
-    }
+  @media (max-width: 800px) {
+    padding-top: 100px;
+    flex-direction: column;
+  }
 `
 
 export const Item = styled.div`
-    width: 50%;
-    display: inline-block;
-    margin-bottom: 50rem;
+  width: 50%;
+  display: inline-block;
+  margin-bottom: 50rem;
 
-    @media (max-width: 800px) {
-        width: 100%;
-    }
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 `
 
 export const Category = styled.h1`
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 60px;
-    line-height: 70px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    display: inline-block; 
-    padding: 25px;
-    line-height: 1;
-    border-radius: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 70px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+  padding: 25px;
+  line-height: 1;
+  border-radius: 4px;
 
-    @media (max-width: 800px) {
-        display: none;
-        font-size: 18px;
-        padding: 10px;
-    }
+  @media (max-width: 800px) {
+    display: none;
+    font-size: 18px;
+    padding: 10px;
+  }
 `
 export const Description = styled.p`
   @media (max-width: 800px) {
     display: none;
   }
-`;
+`
 
 export const Title = styled.h2`
   font-style: normal;
   font-weight: 300;
-  font-size: 40px;
+  font-size: 40rem;
   line-height: 1;
   margin-top: 0;
   margin-bottom: 32px;
@@ -64,17 +64,17 @@ export const Title = styled.h2`
     font-size: 32px;
     text-align: center;
   }
-`;
+`
 
 interface IBannerMainContainer {
-  backgroundImage: string;
+  backgroundImage: string
 }
 
 export const BannerMainContainer = styled.section<IBannerMainContainer>`
   height: 80vh;
   position: relative;
   color: #fff;
-  background-image: ${ ({ backgroundImage }) => `url(${backgroundImage})`}; 
+  background-image: ${({ backgroundImage }) => `url(${backgroundImage})`};
   background-size: cover;
   background-position: center;
   @media (max-width: 800px) {
@@ -84,7 +84,7 @@ export const BannerMainContainer = styled.section<IBannerMainContainer>`
 
   &:after,
   &:before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     left: 0;
@@ -96,7 +96,7 @@ export const BannerMainContainer = styled.section<IBannerMainContainer>`
   &:before {
     top: 0;
     height: 100%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
   }
 
   &:after {
@@ -120,7 +120,7 @@ export const WatchButton = styled.button`
   color: var(--black-dark);
   background: var(--gray-light);
   border-color: var(--black-dark);
-  transition: opacity .3s linear, transform 200ms linear;
+  transition: opacity 0.3s linear, transform 200ms linear;
   display: none;
   margin: 0 auto;
 
@@ -128,8 +128,7 @@ export const WatchButton = styled.button`
     display: block;
 
     &:hover {
-      transform: scale(1.02)
+      transform: scale(1.02);
     }
   }
 `
-
